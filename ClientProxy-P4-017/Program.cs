@@ -11,6 +11,7 @@ namespace ClientProxy_P4_017
     {
         static void Main(string[] args)
         {
+            //Menambah try catch
             try
             {
                 ServiceReference1.MatematikaClient obj = new ServiceReference1.MatematikaClient();
