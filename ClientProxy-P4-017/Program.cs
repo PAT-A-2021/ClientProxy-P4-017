@@ -11,7 +11,6 @@ namespace ClientProxy_P4_017
     {
         static void Main(string[] args)
         {
-            //Menambah try catch
             try
             {
                 ServiceReference1.MatematikaClient obj = new ServiceReference1.MatematikaClient();
@@ -34,7 +33,8 @@ namespace ClientProxy_P4_017
                 double jarak = Math.Sqrt(Math.Pow(selisihX, 2) +
                 Math.Pow(selisihY, 2));
                 Console.WriteLine("Hasil Koordinat " + jarak);
-            }catch (FaultException<ServiceReference1.MathFault> mf)
+            }
+            catch (FaultException<ServiceReference1.MathFault> mf)
             {
                 Console.WriteLine(mf.Detail.Kode);
                 Console.WriteLine(mf.Detail.Pesan);
